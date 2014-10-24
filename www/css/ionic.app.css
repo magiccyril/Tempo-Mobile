@@ -7814,3 +7814,15 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 .platform-c:not(.enable-transitions) * {
   -webkit-transition: none !important;
   transition: none !important; }
+
+.blue {
+  color: #008CBA; }
+
+.red {
+  color: #f04124; }
+
+.calendar-out {
+  background-color: #E6E6E6; }
+
+.calendar-empty {
+  background-color: #f5f5f5; }
