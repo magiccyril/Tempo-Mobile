@@ -1,0 +1,42 @@
+<ion-view title="EJP">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <div class="list card">
+      <div class="item">
+        <h2>Aujourd'hui</h2>
+        <p>{{ todayDate.format('dddd DD MMMM YYYY') }}</p>
+      </div>
+
+      <div class="item">Nord</div>
+      <div class="item">Zone PACA</div>
+      <div class="item">Ouest</div>
+      <div class="item">Sud</div>
+    </div>
+
+    <div class="list card">
+      <div class="item">
+        <h2>Demain</h2>
+        <p>{{ tomorrowDate.format('dddd DD MMMM YYYY') }}</p>
+      </div>
+
+      <div class="item">Nord</div>
+      <div class="item">Zone PACA</div>
+      <div class="item">Ouest</div>
+      <div class="item">Sud</div>
+    </div>
+
+    <div class="list card">
+      <div class="item">
+        <h2>Il reste</h2>
+        <p>(entre le 1er novembre et 31 mars)</p>
+      </div>
+      <div class="item">Nord : {{ ejpCounter.north }} jour<span ng-show="ejpCounter.north > 1">s</span></div>
+      <div class="item">Zone PACA : {{ ejpCounter.paca }} jour<span ng-show="ejpCounter.paca > 1">s</span></div>
+      <div class="item">Ouest : {{ ejpCounter.west }} jour<span ng-show="ejpCounter.west > 1">s</span></div>
+      <div class="item">Sud : {{ ejpCounter.south }} jour<span ng-show="ejpCounter.south > 1">s</span></div>
+    </div>
+
+  </ion-content>
+</ion-view>
